@@ -20,7 +20,7 @@ if [ -p /dev/stdin ]; then
 else
     message=$@
 fi
-message=\"$message\"
+message=$message
 
 mosquitto_pub \
     --cafile $cafile \
