@@ -5,5 +5,5 @@
 for i in `seq 1 $1`
 do  
     now=`gdate "+%Y-%m-%dT%H:%M:%S.%3N"`
-    echo "{\"device_id\":22,\"time\":\"$now\",\"temperature\":27.8,\"humidity\":70,\"co2\":1000}"
+    echo "{\\\"time\\\":\\\"$now\\\",\\\"temperature\\\":27.8,\\\"humidity\\\":70,\\\"co2\\\":1000}"
 done
