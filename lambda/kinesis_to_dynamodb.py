@@ -11,8 +11,7 @@ import re
 TABLE_NAME = os.environ.get('TABLE_NAME', "default")
 DDB_PRIMARY_KEY = "device_id"
 DDB_SORT_KEY = "time"
-DDB_ATTR = "temp"
-TOPIC_PREFIX="hamana-co2/data/"
+TOPIC_PREFIX="co2_sensor/data/"
 #-----Dynamo Info change here------
 
 dynamodb = boto3.resource('dynamodb')
